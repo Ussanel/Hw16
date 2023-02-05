@@ -1,17 +1,27 @@
-.header_mob {
-    .hm_right {
+.header_mob{
+.box{
+    // .left{}
+    .right{
         a {
             text-decoration: none;
             color: black;
-
-            & ::before {
+            &::before {
                 content: url(/picture/-phone-in-talk_90490_1.png);
                 margin-right: 5px;
                 height: 100%;
                 width: auto;
                 display: inline-block;
                 vertical-align: top;
-            }
-        }
+            }}
     }
 }
+}
+
+// .burger{
+//     .child_1{
+//     }
+//     .child_2{
+//     }
+//     .child_3{
+//     }
+// }

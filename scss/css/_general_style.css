@@ -98,11 +98,11 @@ html {
   font-style: bold;
 }
 
-.header_mob .hm_right a {
+.header_mob .box .right a {
   text-decoration: none;
   color: black;
 }
-.header_mob .hm_right a ::before {
+.header_mob .box .right a::before {
   content: url(/picture/-phone-in-talk_90490_1.png);
   margin-right: 5px;
   height: 100%;
@@ -117,36 +117,35 @@ html {
   display: inline-block;
   vertical-align: middle;
 }
-.contant left {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  vertical-align: top;
-  align-content: flex-start; */
+.contant .left {
   width: 40vw;
   display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
-.contant left title_text {
+.contant .left .title_text {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   letter-spacing: 0.1em;
   color: #1B1D1F;
   margin-bottom: 30px;
-  animation: slid_text_left 0.5s linear 1 reverse 0s backwards span;
+  animation: slid_text_left 0.5s linear 1 reverse 0s backwards;
+}
+.contant .left .title_text span {
   color: #46B1DE;
 }
-.contant left slide {
-  animation: slide 0.5s linear 1 reverse 0.2s backwards text;
+.contant .left .slide {
+  animation: slide 0.5s linear 1 reverse 0.2s backwards;
+}
+.contant .left .slide .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #1B1D1F;
   margin-bottom: 48px;
 }
-.contant left slide btn {
+.contant .left .slide .btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -158,7 +157,7 @@ html {
   text-align: center;
   text-transform: uppercase;
 }
-.contant left slide btn btn_1 {
+.contant .left .slide .btn .btn_1 {
   padding: 16px 35px;
   background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
   box-shadow: 0px 2px 10px #46B1DE;
@@ -167,22 +166,21 @@ html {
   width: 110px;
   height: min-content;
 }
-.contant left slide btn btn_2 {
+.contant .left .slide .btn .btn_2 {
   width: 110px;
   height: min-content;
   padding: 16px 35px;
   border-radius: 8px;
   background: #FFFFFF;
-  /* mix-blend-mode: normal; */
   border: 1px solid #DDE0DC;
   box-shadow: 0px 2px 10px #DDE0DC;
   color: #46B1DE;
 }
-.contant right {
+.contant .right {
   display: inline-block;
   vertical-align: top;
 }
-.contant right_img {
+.contant .right .right_img {
   width: 572px;
   height: 530px;
   position: absolute;
