@@ -1,0 +1,17 @@
+.header_mob {
+    .hm_right {
+        a {
+            text-decoration: none;
+            color: black;
+
+            & ::before {
+                content: url(/picture/-phone-in-talk_90490_1.png);
+                margin-right: 5px;
+                height: 100%;
+                width: auto;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+}

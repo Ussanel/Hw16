@@ -9,6 +9,205 @@ html {
   background-size: 100vw auto;
   background-repeat: no-repeat;
 }
-html body {
-  width: 50vw;
+
+.header {
+  /* margin-top: 60px;
+  margin-left: 7.85%;
+  margin: 60px 210px 0 110px; */
+  margin: 60px 110px 34px 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Sofia Sans", sans-serif;
+}
+.header .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Sofia Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  color: #46B1DE;
+  line-height: 110%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .box img {
+  width: 78px;
+  height: 80px;
+}
+.header .box .logo_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header .box span {
+  text-shadow: none;
+  font-size: 27px;
+}
+.header .box_center {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1B1D1F;
+  height: 19px;
+  width: 350px;
+}
+.header .box_center span:hover {
+  color: #46b1de;
+}
+.header .box_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .box_right .phone {
+  font-family: "Sofia Sans", sans-serif;
+  white-space: nowrap;
+}
+.header .box_right .phone a {
+  text-decoration: none;
+  color: black;
+}
+.header .box_right .phone a::before {
+  content: url(/picture/-phone-in-talk_90490_1.png);
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  vertical-align: top;
+}
+.header .box_right .bold {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.header .box_right .bold::after {
+  margin-left: 5px;
+  margin-right: 5px;
+  content: "|";
+  color: black;
+  font-style: bold;
+}
+
+.header_mob .hm_right a {
+  text-decoration: none;
+  color: black;
+}
+.header_mob .hm_right a ::before {
+  content: url(/picture/-phone-in-talk_90490_1.png);
+  margin-right: 5px;
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contant {
+  margin: 0 110px 0 110px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contant left {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  vertical-align: top;
+  align-content: flex-start; */
+  width: 40vw;
+  display: inline-block;
+}
+.contant left title_text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  color: #1B1D1F;
+  margin-bottom: 30px;
+  animation: slid_text_left 0.5s linear 1 reverse 0s backwards span;
+  color: #46B1DE;
+}
+.contant left slide {
+  animation: slide 0.5s linear 1 reverse 0.2s backwards text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1B1D1F;
+  margin-bottom: 48px;
+}
+.contant left slide btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contant left slide btn btn_1 {
+  padding: 16px 35px;
+  background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+  box-shadow: 0px 2px 10px #46B1DE;
+  border-radius: 8px;
+  color: white;
+  width: 110px;
+  height: min-content;
+}
+.contant left slide btn btn_2 {
+  width: 110px;
+  height: min-content;
+  padding: 16px 35px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  /* mix-blend-mode: normal; */
+  border: 1px solid #DDE0DC;
+  box-shadow: 0px 2px 10px #DDE0DC;
+  color: #46B1DE;
+}
+.contant right {
+  display: inline-block;
+  vertical-align: top;
+}
+.contant right_img {
+  width: 572px;
+  height: 530px;
+  position: absolute;
+  top: 152px;
+  right: 110px;
+  z-index: -99;
+}
+
+@keyframes slid_text_left {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0%, 70%);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0%, 70%);
+  }
 }
