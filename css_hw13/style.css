@@ -293,7 +293,7 @@ html {
     margin: 0 15px;
 }
 
-.carts_1 {
+.box_1 {
     box-sizing: border-box;
     width: 280px;
     height: 120px;
@@ -307,7 +307,7 @@ html {
     flex-direction: row;
 }
 
-.carts_2 {
+.box_2 {
     box-sizing: border-box;
     width: 280px;
     height: 120px;
@@ -321,7 +321,7 @@ html {
     flex-direction: row;
 }
 
-.carts_3 {
+.box_3 {
     box-sizing: border-box;
     width: 280px;
     height: 120px;

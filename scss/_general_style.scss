@@ -11,7 +11,8 @@ html {
 }
 @import '_header';
 @import 'header_mob';
-@import 'contant'
+@import 'contant';
+@import '_carts';
 // .header_mob,
 // .c_text_mob,
 // .c_btn_mob,
@@ -20,3 +21,10 @@ html {
 //     top: -999999px;
 //     left: -9999999px
 //  for 1440px}
+.header_mob,
+.text_mob,
+.btn_mob,
+.right_img_mob {
+    position: absolute;
+    top: -999999px;
+    left: -9999999px}
