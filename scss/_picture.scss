@@ -1,0 +1,11 @@
+.picture{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 91px;
+    img {
+        width: 280px;
+        height: 128px;
+        border-radius: 8px;
+    }
+}

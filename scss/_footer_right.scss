@@ -1,0 +1,120 @@
+.footer {
+    .right {
+        width: 33%;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 135%;
+        color: #FFFFFF;
+
+        .contacts {
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 40px;
+            margin-left: 2px;
+            margin-bottom: 20px;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 5px 5px 0 5px;
+            height: 240px;
+
+            img {
+                box-sizing: border-box;
+                width: 28px;
+                height: 28px;
+                margin-right: 10px
+            }
+            a {
+                text-decoration: none;
+                color: white
+            }
+
+            // .mob {}
+
+            .phone {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                &::before {
+                    content: url(/picture/footer_phone.png);
+                    color: white;
+                    box-sizing: border-box;
+                    width: auto;
+                    height: 100%;
+                    display: inline-block;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                img{
+                    transform: translate(3%, 3%);
+                }
+            }
+
+            .icon { width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .whatsapp {
+                    transform: translate(10%, 10%)
+                }
+            }
+
+            .insta {
+                &::before {
+                    content: url(/picture/instagram_icon.png);
+                    color: white;
+                    box-sizing: border-box;
+                    width: auto;
+                    height: 100%;
+                    margin-right: 10px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                img{
+                    transform: translate(3%, 3%);
+                }
+            }
+
+            .email {
+                &::before {
+                content: url(/picture/Email_icon.png);
+                color: white;
+                box-sizing: border-box;
+                width: auto;
+                height: 100%;
+                margin-right: 5px;
+                display: inline-block;
+                vertical-align: top;
+                transform: translate(-8%, 0%);
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+            img{
+                transform: translate(3%, 3%);
+            }
+                
+            }
+        }
+
+        .copyright { font-size: small;
+            right: 10px;
+            bottom: 2px;
+            position: absolute;
+            img {
+                margin-right: 5px;
+                height: 100%;
+                width: auto;
+            }}
+    }
+}

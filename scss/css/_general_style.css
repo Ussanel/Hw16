@@ -726,10 +726,215 @@ html {
   border: black 2px solid;
 }
 
+.picture {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 91px;
+}
+.picture img {
+  width: 280px;
+  height: 128px;
+  border-radius: 8px;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 100vw;
+  height: min-content;
+  background-image: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+  padding: 55px 115px 25px 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.footer .left {
+  width: 33%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  color: #0F2D4A;
+  font-size: 20px;
+}
+.footer .left .boxicon {
+  color: #0F2D4A;
+  font-family: "Sofia Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 26px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.footer .left .boxicon img {
+  width: 78px;
+  height: 80px;
+}
+.footer .left .boxicon span {
+  text-transform: uppercase;
+  font-size: 39px;
+  white-space: pre;
+}
+.footer .left .box_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .left .box_text .text_left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 150px;
+}
+.footer .left .box_text .text_left .list_text:hover {
+  color: white;
+}
+.footer .left .box_text .text_left .list_ua {
+  font-weight: bold;
+  display: inline-block;
+}
+.footer .left .box_text .text_left .list_ua:hover {
+  color: white;
+}
+.footer .left .box_text .text_left .list_ua::after {
+  margin-left: 5px;
+  margin-right: 5px;
+  content: "|";
+  color: black;
+  font-style: bold;
+  display: inline-block;
+}
+.footer .left .box_text .text_left .list_en {
+  display: inline-block;
+}
+.footer .left .box_text .text_left .list_en :hover {
+  color: white;
+}
+.footer .left .box_text .text_right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 150px;
+}
+
+.footer .right {
+  width: 33%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: #FFFFFF;
+}
+.footer .right .contacts {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+.footer .right .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px 5px 0 5px;
+  height: 240px;
+}
+.footer .right .list img {
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+.footer .right .list a {
+  text-decoration: none;
+  color: white;
+}
+.footer .right .list .phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .right .list .phone::before {
+  content: url(/picture/footer_phone.png);
+  color: white;
+  box-sizing: border-box;
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+.footer .right .list .phone:hover {
+  text-decoration: underline;
+}
+.footer .right .list .phone img {
+  transform: translate(3%, 3%);
+}
+.footer .right .list .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .right .list .icon .whatsapp {
+  transform: translate(10%, 10%);
+}
+.footer .right .list .insta::before {
+  content: url(/picture/instagram_icon.png);
+  color: white;
+  box-sizing: border-box;
+  width: auto;
+  height: 100%;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .right .list .insta:hover {
+  text-decoration: underline;
+}
+.footer .right .list .insta img {
+  transform: translate(3%, 3%);
+}
+.footer .right .list .email::before {
+  content: url(/picture/Email_icon.png);
+  color: white;
+  box-sizing: border-box;
+  width: auto;
+  height: 100%;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  transform: translate(-8%, 0%);
+}
+.footer .right .list .email:hover {
+  text-decoration: underline;
+}
+.footer .right .list .email img {
+  transform: translate(3%, 3%);
+}
+.footer .right .copyright {
+  font-size: small;
+  right: 10px;
+  bottom: 2px;
+  position: absolute;
+}
+.footer .right .copyright img {
+  margin-right: 5px;
+  height: 100%;
+  width: auto;
+}
+
 .header_mob,
 .text_mob,
 .btn_mob,
-.right_img_mob {
+.right_img_mob,
+.burger {
   position: absolute;
   top: -999999px;
   left: -9999999px;

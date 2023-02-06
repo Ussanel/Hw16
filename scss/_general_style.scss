@@ -16,18 +16,15 @@ html {
 @import '_table';
 @import '_diagram';
 @import '_form';
-// .header_mob,
-// .c_text_mob,
-// .c_btn_mob,
-// .c_right_img_mob {
-//     position: absolute;
-//     top: -999999px;
-//     left: -9999999px
-//  for 1440px}
+@import '_picture';
+@import '_footer_left';
+@import '_footer_right';
+
 .header_mob,
 .text_mob,
 .btn_mob,
-.right_img_mob {
+.right_img_mob,
+.burger{
     position: absolute;
     top: -999999px;
     left: -9999999px}
