@@ -775,8 +775,6 @@ html {
 
 .f_box {
     box-sizing: border-box;
-    /* width: 821px;
-    height: 247px; */
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     backdrop-filter: blur(2px);
@@ -784,8 +782,7 @@ html {
 }
 
 .f_h1 {
-    /* width: 763px;
-    height: 42px; */
+  
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -798,8 +795,7 @@ html {
 }
 
 .f_h4 {
-    /* width: 801px;
-height: 22px; */
+   
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;

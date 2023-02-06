@@ -629,6 +629,103 @@ html {
   height: 112px;
 }
 
+.form .bigbox {
+  box-sizing: border-box;
+  width: 845px;
+  height: 265px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 9px 8px 15px;
+  margin: 88px auto;
+}
+.form .bigbox .box {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+.form .bigbox .box h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1B1D1F;
+  margin: 29px auto 7px auto;
+}
+.form .bigbox .box h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #1B1D1F;
+  margin-bottom: 45px;
+}
+.form .bigbox .box .btnbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 41px;
+}
+.form .bigbox .box .btnbox div {
+  width: 233px;
+  height: 57px;
+  background: rgba(217, 217, 217, 0.71);
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  text-align: center;
+  color: rgba(27, 29, 31, 0.51);
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form .bigbox .box .btnbox div:hover {
+  border: #46B1DE 2px solid;
+}
+.form .bigbox .box .btnbox img {
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  padding: 15px 10px;
+}
+.form .bigbox .box .btnbox input {
+  border: none;
+  background: none;
+  padding-left: 10px;
+  border-left: #000000 solid 2px;
+}
+.form .bigbox .box .btnbox button {
+  border: none;
+  width: 180px;
+  height: 57px;
+  background: #46B1DE;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.form .bigbox .box .btnbox button:hover {
+  border: black 2px solid;
+}
+
 .header_mob,
 .text_mob,
 .btn_mob,
