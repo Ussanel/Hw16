@@ -1145,14 +1145,7 @@ html {
     }
 
     @keyframes an_circle6 {
-        0% {
-            transform: translate(-50%, -50%);
-        }
-
-        100% {
-            transform: translate(-390%, 315%);
-
-        }
+        0% {transform: translate(-50%, -50%);} 100% {transform: translate(-390%, 315%);}
     }
 
     @keyframes an_circle2 {
@@ -1427,6 +1420,7 @@ html {
         font-size: 14px;
         line-height: 17px;
     }
+    /* 21.01 */
 
     .d_table_box img {
         transform: scale(0.8) translate(0%, 0%)

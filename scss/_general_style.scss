@@ -1,14 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
-html {
-    width: 100%;
-    background-image: url(/picture/Rectangle1.png);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
-}
+
 @import '_header';
 @import 'header_mob';
 @import 'contant';
@@ -28,3 +19,19 @@ html {
     position: absolute;
     top: -999999px;
     left: -9999999px}
+
+
+   * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    background-image: url(/picture/Rectangle1.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    @include _992{
+        background-color: none;
+    }
+}

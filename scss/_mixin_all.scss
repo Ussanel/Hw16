@@ -1,0 +1,70 @@
+@mixin _1250 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+
+@mixin _1024 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _992 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _800 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _768 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _690 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _625{
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _577 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _505 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _482 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _440 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+};
+@mixin _350 {
+    @media screen and (max-width: 1250px) {
+        @content
+    }
+}
+
+
+%carts_box{
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+}

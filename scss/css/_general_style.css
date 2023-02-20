@@ -145,7 +145,13 @@ html {
   color: #1B1D1F;
   margin-bottom: 48px;
 }
-.contant .left .slide .btn {
+@media screen and (max-width: 1250px) {
+  .contant .left .slide .text {
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+}
+.contant .btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -157,7 +163,7 @@ html {
   text-align: center;
   text-transform: uppercase;
 }
-.contant .left .slide .btn .btn_1 {
+.contant .btn .btn_1 {
   padding: 16px 35px;
   background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
   box-shadow: 0px 2px 10px #46B1DE;
@@ -166,7 +172,7 @@ html {
   width: 110px;
   height: min-content;
 }
-.contant .left .slide .btn .btn_2 {
+.contant .btn .btn_2 {
   width: 110px;
   height: min-content;
   padding: 16px 35px;
@@ -176,17 +182,24 @@ html {
   box-shadow: 0px 2px 10px #DDE0DC;
   color: #46B1DE;
 }
-.contant .right {
+
+.right {
   display: inline-block;
   vertical-align: top;
 }
-.contant .right .right_img {
+.right .right_img {
   width: 572px;
   height: 530px;
   position: absolute;
   top: 152px;
   right: 110px;
   z-index: -99;
+}
+@media screen and (max-width: 1250px) {
+  .right .right_img {
+    right: 0px;
+    top: 62px;
+  }
 }
 
 @keyframes slid_text_left {
@@ -220,6 +233,11 @@ html {
   align-content: flex-start;
   z-index: 10;
   animation: slide_carts 0.3s linear 1 reverse 0.7s backwards;
+}
+@media screen and (max-width: 1250px) {
+  .carts {
+    margin-top: 26px;
+  }
 }
 .carts span {
   font-size: 65px;
@@ -382,12 +400,24 @@ html {
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box {
+    margin-bottom: 40px;
+    width: 80vw;
+  }
+}
 .diagram .table_box div {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box div {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .diagram .table_box div span {
   color: #46B1DE;
@@ -417,6 +447,11 @@ html {
 .diagram .table_box .gap_back {
   grid-area: 1/4/5/10;
   position: relative;
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap_back {
+    transform: scale(0.8);
+  }
 }
 .diagram .table_box .gap_back::before {
   content: "";
@@ -587,6 +622,16 @@ html {
   }
   100% {
     transform: translate(-410%, 320%);
+  }
+}
+@media screen and (max-width: 1250px) {
+  @keyframes an_circle6 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-390%, 315%);
+    }
   }
 }
 @keyframes an_gap5 {
