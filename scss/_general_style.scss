@@ -31,7 +31,4 @@ html {
     background-image: url(/picture/Rectangle1.png);
     background-size: 100vw auto;
     background-repeat: no-repeat;
-    @include _992{
-        background-color: none;
-    }
 }

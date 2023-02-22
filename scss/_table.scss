@@ -9,11 +9,6 @@
         color: #1B1D1F;
         text-align: center;
         margin: 88px auto 5px auto;
-        @include _992{
-            font-size: 20px;
-            margin-top: 50px;
-        }
-
         span {
             color: #46B1DE;
         }
@@ -26,10 +21,6 @@
         text-align: center;
         color: #000000;
         margin-bottom: 50px;
-        @include _992{font-size: 15px;
-            white-space: nowrap;
-            margin-bottom: 15px;}
-
     }
 
     .box {
@@ -51,16 +42,6 @@
         grid-auto-flow: column;
         justify-items: center;
         align-items: center;
-        @include _992{
-            width: 90vw;
-            padding: 10px;
-            height: min-content;
-            margin-left: auto;
-            margin-right: auto;
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
-        }
-
         .gap {
             width: 300px;
             height: 176px;
@@ -72,12 +53,6 @@
             border-radius: 8px;
             padding: 10px;
             box-sizing: border-box;
-            @include _992{width: auto;
-                height: 100px;
-                font-size: 13px;
-                line-height: 13px;
-                padding: 5px;}
-
             .gaptitle {
                 font-weight: 700;
                 font-size: 18px;
@@ -87,21 +62,11 @@
                 align-items: center;
                 justify-content: flex-start;
                 margin-bottom: 25px;
-                @include _992{
-                    font-size: 13px;
-                    line-height: 13px;
-                    white-space: nowrap;
-                    margin-bottom: 0px;
-                }
-
                 span {
                     font-weight: 400;
                     font-size: 40px;
                     line-height: 47px;
                     margin: 0 10px;
-                    @include _992{
-                        font-size: 35px;
-                    }
                 }
             }
         }

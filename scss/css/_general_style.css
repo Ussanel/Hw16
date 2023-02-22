@@ -1,15 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100%;
-  background-image: url(/picture/Rectangle1.png);
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-}
-
 .header {
   /* margin-top: 60px;
   margin-left: 7.85%;
@@ -19,6 +7,16 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   font-family: "Sofia Sans", sans-serif;
+}
+@media screen and (max-width: 1250px) {
+  .header {
+    margin: 50px 100px 30px 100px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .header {
+    margin: 30px 30px 10px 30px;
+  }
 }
 .header .box {
   display: flex;
@@ -33,6 +31,11 @@ html {
   line-height: 110%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 1250px) {
+  .header .box {
+    font-size: 25px;
+  }
+}
 .header .box img {
   width: 78px;
   height: 80px;
@@ -43,9 +46,19 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media screen and (max-width: 1250px) {
+  .header .box .logo_text {
+    white-space: nowrap;
+  }
+}
 .header .box span {
   text-shadow: none;
   font-size: 27px;
+}
+@media screen and (max-width: 1250px) {
+  .header .box span {
+    font-size: 20px;
+  }
 }
 .header .box_center {
   display: flex;
@@ -61,6 +74,11 @@ html {
   height: 19px;
   width: 350px;
 }
+@media screen and (max-width: 1250px) {
+  .header .box_center {
+    font-size: 12px;
+  }
+}
 .header .box_center span:hover {
   color: #46b1de;
 }
@@ -69,6 +87,11 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media screen and (max-width: 1250px) {
+  .header .box_right {
+    font-size: 12px;
+  }
 }
 .header .box_right .phone {
   font-family: "Sofia Sans", sans-serif;
@@ -85,6 +108,12 @@ html {
   width: 25px;
   display: inline-block;
   vertical-align: top;
+}
+@media screen and (max-width: 1250px) {
+  .header .box_right .phone a::before {
+    margin-right: 0px;
+    transform: scale(0.8);
+  }
 }
 .header .box_right .bold {
   margin-left: 20px;
@@ -117,11 +146,26 @@ html {
   display: inline-block;
   vertical-align: middle;
 }
+@media screen and (max-width: 1250px) {
+  .contant {
+    margin: 0 10px;
+    height: min-content;
+    color: green;
+  }
+}
 .contant .left {
   width: 40vw;
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+}
+@media screen and (max-width: 1250px) {
+  .contant .left {
+    margin: 0 10px;
+    height: min-content;
+    width: 50vw;
+    display: inline-block;
+  }
 }
 .contant .left .title_text {
   font-weight: 700;
@@ -131,6 +175,18 @@ html {
   color: #1B1D1F;
   margin-bottom: 30px;
   animation: slid_text_left 0.5s linear 1 reverse 0s backwards;
+}
+@media screen and (max-width: 1250px) {
+  .contant .left .title_text {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .contant .left .title_text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 .contant .left .title_text span {
   color: #46B1DE;
@@ -151,6 +207,13 @@ html {
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 1250px) {
+  .contant .left .slide .text {
+    font-size: 13px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+  }
+}
 .contant .btn {
   display: flex;
   justify-content: space-around;
@@ -163,6 +226,12 @@ html {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1250px) {
+  .contant .btn {
+    font-size: 15px;
+    align-items: flex-end;
+  }
+}
 .contant .btn .btn_1 {
   padding: 16px 35px;
   background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
@@ -171,6 +240,12 @@ html {
   color: white;
   width: 110px;
   height: min-content;
+}
+@media screen and (max-width: 1250px) {
+  .contant .btn .btn_1 {
+    width: 70px;
+    padding: 8px 20px;
+  }
 }
 .contant .btn .btn_2 {
   width: 110px;
@@ -182,10 +257,21 @@ html {
   box-shadow: 0px 2px 10px #DDE0DC;
   color: #46B1DE;
 }
+@media screen and (max-width: 1250px) {
+  .contant .btn .btn_2 {
+    width: 70px;
+    padding: 8px 20px;
+  }
+}
 
 .right {
   display: inline-block;
   vertical-align: top;
+}
+@media screen and (max-width: 1250px) {
+  .right {
+    display: inline-block;
+  }
 }
 .right .right_img {
   width: 572px;
@@ -199,6 +285,21 @@ html {
   .right .right_img {
     right: 0px;
     top: 62px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .right .right_img {
+    width: auto;
+    height: 400px;
+    top: 87px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .right .right_img {
+    position: absolute;
+    top: 69px;
+    right: 10px;
   }
 }
 
@@ -239,6 +340,12 @@ html {
     margin-top: 26px;
   }
 }
+@media screen and (max-width: 1250px) {
+  .carts {
+    width: 100vw;
+    margin: 70px auto 30px auto;
+  }
+}
 .carts span {
   font-size: 65px;
   line-height: 76px;
@@ -247,6 +354,12 @@ html {
   text-align: center;
   color: #46B1DE;
   margin: 0 15px;
+}
+@media screen and (max-width: 1250px) {
+  .carts span {
+    font-size: 35px;
+    margin: 5px;
+  }
 }
 .carts .box_1 {
   box-sizing: border-box;
@@ -261,6 +374,15 @@ html {
   align-items: center;
   flex-direction: row;
 }
+@media screen and (max-width: 1250px) {
+  .carts .box_1 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
+}
 .carts .box_2 {
   box-sizing: border-box;
   width: 280px;
@@ -272,7 +394,15 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+}
+@media screen and (max-width: 1250px) {
+  .carts .box_2 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
 }
 .carts .box_3 {
   box-sizing: border-box;
@@ -286,6 +416,15 @@ html {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+}
+@media screen and (max-width: 1250px) {
+  .carts .box_3 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
 }
 
 @keyframes slide_carts {
@@ -310,6 +449,12 @@ html {
   text-align: center;
   margin: 88px auto 5px auto;
 }
+@media screen and (max-width: 1250px) {
+  .table .title {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
 .table .title span {
   color: #46B1DE;
 }
@@ -320,6 +465,13 @@ html {
   text-align: center;
   color: #000000;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1250px) {
+  .table .subtitle {
+    font-size: 15px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
 }
 .table .box {
   box-sizing: border-box;
@@ -341,6 +493,17 @@ html {
   justify-items: center;
   align-items: center;
 }
+@media screen and (max-width: 1250px) {
+  .table .box {
+    width: 90vw;
+    padding: 10px;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
 .table .box .gap {
   width: 300px;
   height: 176px;
@@ -353,6 +516,15 @@ html {
   padding: 10px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1250px) {
+  .table .box .gap {
+    width: auto;
+    height: 100px;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 5px;
+  }
+}
 .table .box .gap .gaptitle {
   font-weight: 700;
   font-size: 18px;
@@ -363,11 +535,24 @@ html {
   justify-content: flex-start;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 1250px) {
+  .table .box .gap .gaptitle {
+    font-size: 13px;
+    line-height: 13px;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+}
 .table .box .gap .gaptitle span {
   font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   margin: 0 10px;
+}
+@media screen and (max-width: 1250px) {
+  .table .box .gap .gaptitle span {
+    font-size: 35px;
+  }
 }
 
 .diagram h1 {
@@ -382,6 +567,13 @@ html {
   margin-left: auto;
   margin-bottom: 50px;
   margin-right: auto;
+}
+@media screen and (max-width: 1250px) {
+  .diagram h1 {
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
 }
 .diagram h1 span {
   font-weight: 600;
@@ -406,6 +598,16 @@ html {
     width: 80vw;
   }
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box {
+    margin: 0 auto 30px auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box img {
+    transform: scale(0.8) translate(0%, 0%);
+  }
+}
 .diagram .table_box div {
   font-family: "Roboto";
   font-style: normal;
@@ -419,6 +621,12 @@ html {
     line-height: 16px;
   }
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box div {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 .diagram .table_box div span {
   color: #46B1DE;
   font-family: "Roboto";
@@ -427,11 +635,27 @@ html {
   font-size: 20px;
   line-height: 135%;
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box div span {
+    font-size: 16px;
+    line-height: 13px;
+  }
+}
 .diagram .table_box .gap1 {
   grid-area: 1/1/3/5;
   text-align: right;
   margin-right: 40px;
   animation: an_gap1 1s linear 1 reverse 5.1s forwards;
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap1 {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap1 {
+    height: 100px;
+  }
 }
 .diagram .table_box .gap2 {
   grid-area: 3/1/5/4;
@@ -439,10 +663,20 @@ html {
   margin-right: 40px;
   animation: an_gap2 1s linear 1 reverse 5.1s forwards;
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap2 {
+    height: 100px;
+  }
+}
 .diagram .table_box .gap3 {
   grid-area: 5/1/7/6;
   text-align: right;
   animation: an_gap3 1s linear 1 reverse 5.1s forwards;
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap3 {
+    height: 100px;
+  }
 }
 .diagram .table_box .gap_back {
   grid-area: 1/4/5/10;
@@ -511,14 +745,34 @@ html {
   margin-left: 40px;
   animation: an_gap5 1s linear 1 reverse 5.1s forwards;
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap5 {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap5 {
+    height: 100px;
+  }
+}
 .diagram .table_box .gap6 {
   grid-area: 3/10/5/13;
   margin-left: 40px;
   animation: an_gap6 1s linear 1 reverse 5.1s forwards;
 }
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap6 {
+    height: 100px;
+  }
+}
 .diagram .table_box .gap7 {
   grid-area: 5/8/7/13;
   animation: an_gap7 1s linear 1 reverse 5.1s forwards;
+}
+@media screen and (max-width: 1250px) {
+  .diagram .table_box .gap7 {
+    height: 100px;
+  }
 }
 
 .text {
@@ -624,16 +878,6 @@ html {
     transform: translate(-410%, 320%);
   }
 }
-@media screen and (max-width: 1250px) {
-  @keyframes an_circle6 {
-    0% {
-      transform: translate(-50%, -50%);
-    }
-    100% {
-      transform: translate(-390%, 315%);
-    }
-  }
-}
 @keyframes an_gap5 {
   0% {
     opacity: 1;
@@ -674,6 +918,66 @@ html {
   height: 112px;
 }
 
+@media screen and (max-width: 1250px) {
+  @keyframes an_circle6 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-390%, 315%);
+    }
+  }
+  @keyframes an_circle2 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(295%, 310%);
+    }
+  }
+  @keyframes an_circle1 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-395%, -395%);
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  @keyframes an_circle1 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-355%, -325%);
+    }
+  }
+  @keyframes an_circle2 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(250%, 255%);
+    }
+  }
+  @keyframes an_circle5 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(260%, -325%);
+    }
+  }
+  @keyframes an_circle6 {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-325%, 260%);
+    }
+  }
+}
 .form .bigbox {
   box-sizing: border-box;
   width: 845px;
@@ -684,6 +988,13 @@ html {
   border-radius: 10px;
   padding: 10px 9px 8px 15px;
   margin: 88px auto;
+}
+@media screen and (max-width: 1250px) {
+  .form .bigbox {
+    width: 90vw;
+    height: min-content;
+    margin: 50px auto;
+  }
 }
 .form .bigbox .box {
   box-sizing: border-box;
@@ -703,6 +1014,12 @@ html {
   color: #1B1D1F;
   margin: 29px auto 7px auto;
 }
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box h1 {
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
 .form .bigbox .box h4 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -712,6 +1029,12 @@ html {
   text-align: center;
   color: #1B1D1F;
   margin-bottom: 45px;
+}
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box h4 {
+    font-size: 12px;
+    line-height: 100%;
+  }
 }
 .form .bigbox .box .btnbox {
   display: flex;
@@ -738,6 +1061,11 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box .btnbox div {
+    width: 200px;
+  }
+}
 .form .bigbox .box .btnbox div:hover {
   border: #46B1DE 2px solid;
 }
@@ -747,11 +1075,24 @@ html {
   box-sizing: content-box;
   padding: 15px 10px;
 }
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box .btnbox img {
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+    padding: 7px;
+  }
+}
 .form .bigbox .box .btnbox input {
   border: none;
   background: none;
   padding-left: 10px;
   border-left: #000000 solid 2px;
+}
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box .btnbox input {
+    padding-left: 5px;
+  }
 }
 .form .bigbox .box .btnbox button {
   border: none;
@@ -767,6 +1108,11 @@ html {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1250px) {
+  .form .bigbox .box .btnbox button {
+    border: none;
+  }
+}
 .form .bigbox .box .btnbox button:hover {
   border: black 2px solid;
 }
@@ -777,10 +1123,25 @@ html {
   align-items: center;
   margin-bottom: 91px;
 }
+@media screen and (max-width: 1250px) {
+  .picture {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
 .picture img {
   width: 280px;
   height: 128px;
   border-radius: 8px;
+}
+@media screen and (max-width: 1250px) {
+  .picture img {
+    width: 25vw;
+    height: 12vw;
+    border-radius: 8px;
+  }
 }
 
 .footer {
@@ -983,4 +1344,21 @@ html {
   position: absolute;
   top: -999999px;
   left: -9999999px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  background-image: url(/picture/Rectangle1.png);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1250px) {
+  html {
+    background-color: none;
+  }
 }

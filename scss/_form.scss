@@ -9,7 +9,6 @@
         border-radius: 10px;
         padding: 10px 9px 8px 15px;
         margin: 88px auto;
-
         .box {
             box-sizing: border-box;
             background: #FFFFFF;
@@ -26,8 +25,7 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #1B1D1F;
-                margin: 29px auto 7px auto
-            }
+                margin: 29px auto 7px auto;}
 
             h4 {
                 font-family: 'Roboto', sans-serif;
@@ -64,24 +62,25 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-
                     &:hover {
                         border: #46B1DE 2px solid
                     }
                 }
+
                 img {
                     width: 24px;
                     height: 24px;
                     box-sizing: content-box;
                     padding: 15px 10px;
-                
                 }
+
                 input {
                     border: none;
                     background: none;
                     padding-left: 10px;
                     border-left: #000000 solid 2px;
                 }
+
                 button {
                     border: none;
                     width: 180px;

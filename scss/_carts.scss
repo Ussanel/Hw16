@@ -1,12 +1,5 @@
-.carts {
-    @include _1250{
-        margin-top: 26px;
-    }
-    @include _992{
-        width: 100vw;
-        margin: 70px auto 30px auto;
-    }
 
+.carts {
     width: 90vw;
     margin: 60px auto 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -26,10 +19,6 @@
         text-align: center;
         color: #46B1DE;
         margin: 0 15px;
-        @include _992{
-            font-size: 35px;
-            margin: 5px;
-        }
     }
 
     .box_1 {
@@ -44,7 +33,6 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: row;
-        @include _992{@extend %carts_box}
     }
 
     .box_2 {
@@ -58,7 +46,6 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        @include _992{@extend %carts_box}
     }
 
     .box_3 {
@@ -73,7 +60,6 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: row;
-        @include _992{@extend %carts_box}
     }
 }
 
