@@ -1,3 +1,5 @@
+@import '_mixin_all';
+
 %circleall {
     font-size: 35px;
     padding-top: 10px;
@@ -7,8 +9,22 @@
 %gapheight {
     height: 112px;
 }
+
 .diagram {
     h1 {
+        @include _992 {
+            font-size: 20px;
+            margin-top: 45px;
+            margin-bottom: 30px;
+        }
+
+        @include _482 {
+            font-size: 15px;
+            line-height: 130%;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
         width: min-content;
         white-space: nowrap;
         font-family: 'Roboto';
@@ -20,6 +36,7 @@
         margin-left: auto;
         margin-bottom: 50px;
         margin-right: auto;
+
         span {
             font-weight: 600;
             color: #46B1DE;
@@ -27,6 +44,47 @@
     }
 
     .table_box {
+        @include _1250 {
+            margin-bottom: 40px;
+            width: 80vw;
+        }
+
+        @include _992 {
+            margin: 0 auto 30px auto;
+        }
+
+        @include _800 {
+            margin-bottom: 10px;
+        }
+
+        @include _625 {
+            width: 95vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include _547 {
+            white-space: pre-line;
+            height: 345px;
+        }
+
+        @include _505 {
+            width: 90vw;
+            height: 55vw;
+            grid-auto-columns: min-content;
+            grid-auto-rows: min-content;
+            gap: 7px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        @include _482 {
+            margin-bottom: 0px;
+            grid-auto-rows: min-content;
+            grid-auto-columns: min-content;
+            gap: 0px
+        }
+
 
         display: grid;
         height: min-content;
@@ -39,12 +97,38 @@
         gap: 5px;
         grid-template-columns: 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
         div {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
+
+            @include _1250 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            @include _992 {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            @include _800 {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            @include _690 {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            @include _505 {
+                line-height: 9px;
+            }
+
             span {
                 color: #46B1DE;
                 font-family: 'Roboto';
@@ -52,11 +136,68 @@
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 135%;
+
+                @include _992 {
+                    font-size: 16px;
+                    line-height: 13px;
+                }
+
+                @include _800 {
+                    font-size: 13px;
+                    line-height: 13px;
+                }
+
+                @include _690 {
+                    font-size: 14px;
+                }
+
+                @include _625 {
+                    font-size: 12px;
+                }
+
+                @include _505 {
+                    line-height: 11px;
+                }
             }
         }
 
         .gap1 {
             @extend%gapheight;
+
+            @include _1024 {
+                margin-right: 10px;
+            }
+
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+
+            @include _505 {
+                height: 80px;
+                margin: 0;
+                grid-area: 1 / 1 / 3 / 6;
+                margin-right: 10px;
+            }
+
+            @include _482 {
+                height: 60px;
+                grid-area: 1 / 1 / 3 / 6;
+                margin-right: 10px;
+            }
+
+            @include _440 {
+                margin-right: 7px;
+            }
+
+
             grid-area: 1 / 1 / 3 / 5;
             text-align: right;
             margin-right: 40px;
@@ -64,6 +205,31 @@
         }
 
         .gap2 {
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+            @include _625{
+                margin-right: 15px;
+            }
+
+            @include _505 {
+                height: 80px;
+                margin-right: 0px;
+            }
+
+            @include _482 {
+                height: 60px;
+                margin-right: 10px;
+            }
+
             @extend%gapheight;
             grid-area: 3 / 1 / 5 / 4;
             text-align: right;
@@ -72,6 +238,36 @@
         }
 
         .gap3 {
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+            @include _625{
+                width: 200px;
+            } 
+
+            @include _505 {
+                grid-area: 5 / 1 / 8 / 7;
+                text-align: right;
+                margin-right: 10px;
+                height: 80px;
+            }
+
+            @include _482 {
+                height: 60px;
+            }
+
+            @include _440 {
+                margin-top: 10px;
+            }
+
             @extend%gapheight;
             grid-area: 5 / 1 / 7 / 6;
             text-align: right;
@@ -79,6 +275,26 @@
         }
 
         .gap_back {
+            @include _1250 {
+                transform: scale(0.8);
+            }
+
+            @include _625 {
+                transform: scale(0.9);
+            }
+
+            @include _547 {
+                transform: scale(0.8);
+            }
+
+            @include _505 {
+                transform: scale(0.8) translate(0px, 30px);
+            }
+
+            @include _482 {
+                transform: scale(0.9) translate(0px, 0px);
+            }
+
             grid-area: 1 / 4 / 5 / 10;
             position: relative;
 
@@ -98,6 +314,23 @@
                 border-radius: 50%;
 
                 p {
+                    @include _690 {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    @include _440 {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    @include _350 {
+                        width: 20px;
+                        height: 20px;
+                        font-size: small;
+                    }
+
+
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -114,31 +347,109 @@
 
 
                 .circle1 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle1 1s linear 1 normal 5s forwards;
                 }
 
                 .circle2 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle2 1s linear 1 normal 5s forwards;
                 }
 
                 .circle3 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle3 1s linear 1 normal 5s forwards;
                 }
 
                 .circle4 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle4 1s linear 1 normal 5s forwards;
                 }
 
                 .circle5 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle5 1s linear 1 normal 5s forwards;
                 }
 
                 .circle6 {
+                    @include _800 {
+                        padding-top: 13px;
+                    }
+
+                    @include _690 {
+                        padding-top: 10px;
+                    }
+
+                    @include _547 {
+                        padding-top: 13px;
+                    }
+                    @include _350 { padding-top: 5px;}
+
                     @extend%circleall;
                     animation: an_circle6 1s linear 1 normal 5s forwards;
                 }
@@ -154,11 +465,52 @@
             img {
                 transform: translate(0%, 5%);
                 width: 100%;
+                @include _505{
+                    transform: translate(0%, 25%);
+                }
+                @include _482{
+                    transform: translate(0%, 0%);
+                }
+                @include _440{
+                    transform: translate(0%, -5%);
+                }
             }
         }
 
         .gap5 {
-            
+            @include _1024 {
+                margin-left: 10px;
+            }
+
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+
+            @include _505 {
+                height: 80px;
+                margin: 0;
+                grid-area: 1 / 8 / 3 / 13;
+                margin-left: 10px;
+            }
+
+            @include _482 {
+                height: 60px;
+                grid-area: 1 / 8 / 3 / 13;
+                margin-left: 10px;
+            }
+
+            @include _440 {
+                margin-left: 7px;
+            }
+
             @extend %gapheight;
             grid-area: 1 / 9 / 3 / 13;
             margin-left: 40px;
@@ -166,6 +518,31 @@
         }
 
         .gap6 {
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+            @include _625{
+                margin-left: 15px;
+            }
+
+            @include _505 {
+                height: 80px;
+                margin-left: 0px;
+            }
+
+            @include _482 {
+                height: 60px;
+                margin-left: 10px;
+            }
+
             @extend %gapheight;
             grid-area: 3 / 10 / 5 / 13;
             margin-left: 40px;
@@ -173,9 +550,60 @@
         }
 
         .gap7 {
+            @include _992 {
+                height: 100px;
+            }
+
+            @include _800 {
+                height: 88px;
+            }
+
+            @include _690 {
+                height: 80px;
+            }
+            @include _625{
+                width: 200px;
+            } 
+
+            @include _505 {
+                grid-area: 5 / 7 / 7 / 13;
+                margin-left: 10px;
+                height: 80px;
+            }
+
+            @include _482 {
+                height: 60px;
+            }
+
+            @include _440 {
+                margin-top: 10px;
+            }
+
             @extend %gapheight;
             grid-area: 5 / 8 / 7 / 13;
             animation: an_gap7 1s linear 1 reverse 5.1s forwards;
+        }
+
+        img {
+            @include _992 {
+                transform: scale(0.8) translate(0%, 0%)
+            }
+
+            @include _800 {
+                transform: scale(0.8) translate(0%, 0%);
+            }
+
+            @include _505 {
+                transform: scale(0.8) translate(0%, 33%)
+            }
+
+            @include _482 {
+                transform: scale(1) translate(0%, 7%);
+            }
+
+            @include _440 {
+                transform: scale(1) translate(0%, -5%)
+            }
         }
     }
 }
@@ -185,15 +613,49 @@
     justify-content: center;
     align-items: center;
 
+    @include _482 {
+        display: none;
+    }
+
+    @include _440 {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .icon {
         display: inline-block;
     }
 
     img {
+        @include _800 {
+            margin-right: 0;
+            height: 70px;
+        }
+
+        @include _547 {
+            height: 50px;
+        }
+
         margin-right: 16px;
     }
 
     p {
+        @include _690 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        @include _625 {
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        @include _440 {
+            font-size: 13px;
+            white-space: pre-line;
+        }
+
         white-space: nowrap;
         font-family: 'Roboto';
         font-style: normal;
@@ -344,3 +806,248 @@
     }
 }
 
+@include _1250 {
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-390%, 315%);
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(295%, 310%);
+
+        }
+    }
+
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-395%, -395%)
+        }
+    }
+}
+
+@include _1024 {
+
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-355%, -325%);
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(250%, 255%);
+        }
+
+    }
+
+    @keyframes an_circle5 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(260%, -325%)
+        }
+    }
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-325%, 260%)
+        }
+    }
+}
+
+@include _992 {
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-330%, -325%)
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(205%, 255%)
+        }
+    }
+
+    @keyframes an_circle5 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(230%, -325%)
+        }
+    }
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-305%, 260%)
+        }
+    }
+}
+
+@include _800 {
+
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-290%, -270%)
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-285%, 175%)
+        }
+    }
+
+    @keyframes an_circle5 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(180%, -270%)
+        }
+    }
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(190%, 176%)
+        }
+    }
+}
+
+@include _505 {
+
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-200%, -250%)
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-195%, 160%)
+        }
+    }
+
+    @keyframes an_circle5 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(110%, -250%)
+        }
+    }
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(110%, 155%)
+        }
+    }
+}
+@include _350 { 
+    @keyframes an_circle1 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-200%, -290%)
+        }
+    }
+
+    @keyframes an_circle2 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(-195%, 200%)
+        }
+    }
+
+    @keyframes an_circle5 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(110%, -290%)
+        }
+    }
+
+    @keyframes an_circle6 {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translate(100%, 200%)
+        }
+    }}

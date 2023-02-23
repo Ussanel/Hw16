@@ -1193,7 +1193,7 @@ html {
     }
 
     .h_phone a::before {
-        content: url(-phone-in-talk_90490\ 1.png);
+        content: url(-phone-in-talk_90490_1.png);
         margin-right: 0px;
         transform: scale(0.8);
     }
@@ -1420,7 +1420,6 @@ html {
         font-size: 14px;
         line-height: 17px;
     }
-    /* 21.01 */
 
     .d_table_box img {
         transform: scale(0.8) translate(0%, 0%)
@@ -1742,7 +1741,7 @@ html {
     }
 
 }
-
+/* 23/02 */
 @media screen and (max-width:690px) {
     .c_right_img {
         width: auto;
@@ -2284,7 +2283,7 @@ html {
         margin: 0 auto 5px auto;
         border-radius: 8px;
     }
-
+/* 23/02 */
     .footer {
         height: 100vh;
         background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);

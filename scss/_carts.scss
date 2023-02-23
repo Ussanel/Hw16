@@ -1,8 +1,37 @@
+@import '_mixin_all';
 
 .carts {
+    @include _1250 {
+        margin-top: 26px;
+    }
+
+    @include _992 {
+        width: 100vw;
+        margin: 70px auto 30px auto;
+    }
+    @include _690{
+        margin-top: 20px;
+    }
+    @include _547{
+        width: 100vw;
+        height: min-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+        flex-direction: column;
+        margin: 50vh 0 0 0;
+        background-color: white;
+    }
+    @include _350 {position: absolute;
+        top: -999999px;
+        left: -9999999px
+    }
+
     width: 90vw;
     margin: 60px auto 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
     font-style: normal;
     font-weight: 400;
     display: flex;
@@ -12,6 +41,18 @@
     animation: slide_carts 0.3s linear 1 reverse 0.7s backwards;
 
     span {
+        @include _992 {
+            font-size: 35px;
+            margin: 5px;
+        }
+        @include _547{
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0 5px 0 5px
+        }
+
         font-size: 65px;
         line-height: 76px;
         display: flex;
@@ -22,6 +63,29 @@
     }
 
     .box_1 {
+        @include _992 {
+            width: 207px;
+            height: 70px;
+            font-size: 15px;
+            white-space: nowrap;
+            line-height: 90%;
+        }
+        @include _625{
+            width: 185px;
+            height: 64px;
+            font-size: 13px;
+        }
+        @include _547{
+            box-sizing: border-box;
+            width: 50vw;
+            height: min-content;
+            font-size: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        @include _505{ width: 60vw;}
+
         box-sizing: border-box;
         width: 280px;
         height: 120px;
@@ -36,6 +100,28 @@
     }
 
     .box_2 {
+        @include _992 {
+            width: 207px;
+            height: 70px;
+            font-size: 15px;
+            white-space: nowrap;
+            line-height: 90%;
+        }@include _625{
+            width: 185px;
+            height: 64px;
+            font-size: 13px;
+        }
+        @include _547{
+            box-sizing: border-box;
+            width: 50vw;
+            height: min-content;
+            font-size: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        @include _505{ width: 60vw;}
+
         box-sizing: border-box;
         width: 280px;
         height: 120px;
@@ -49,6 +135,30 @@
     }
 
     .box_3 {
+
+        @include _992 {
+            width: 207px;
+            height: 70px;
+            font-size: 15px;
+            white-space: nowrap;
+            line-height: 90%;
+        }
+        @include _625{
+            width: 185px;
+            height: 64px;
+            font-size: 13px;
+        }
+        @include _547{
+            box-sizing: border-box;
+            width: 50vw;
+            height: min-content;
+            font-size: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        @include _505{ width: 60vw;}
+        
         box-sizing: border-box;
         width: 280px;
         height: 120px;
@@ -75,5 +185,3 @@
 
     }
 }
-
-

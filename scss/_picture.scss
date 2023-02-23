@@ -1,13 +1,45 @@
-.picture{
+@import '_mixin_all';
+
+.picture {
+    @include _992 {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    @include _547{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    @include _350 {position: absolute;
+        top: -999999px;
+        left: -9999999px
+    }
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 91px;
-   
+
     img {
+        @include _992 {
+            width: 25vw;
+            height: 12vw;
+            border-radius: 8px;
+        }
+        @include _547{
+            width: 50vw;
+            height: auto;
+            margin: 0 auto 5px auto;
+            border-radius: 8px;
+        }
+
         width: 280px;
         height: 128px;
         border-radius: 8px;
-        
+
     }
 }

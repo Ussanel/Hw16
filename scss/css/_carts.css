@@ -1,0 +1,114 @@
+.carts {
+  width: 90vw;
+  margin: 60px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  z-index: 10;
+  animation: slide_carts 0.3s linear 1 reverse 0.7s backwards;
+}
+@media screen and (max-width: 1250px) {
+  .carts {
+    margin-top: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carts {
+    width: 100vw;
+    margin: 70px auto 30px auto;
+  }
+}
+.carts span {
+  font-size: 65px;
+  line-height: 76px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #46B1DE;
+  margin: 0 15px;
+}
+@media screen and (max-width: 992px) {
+  .carts span {
+    font-size: 35px;
+    margin: 5px;
+  }
+}
+.carts .box_1 {
+  box-sizing: border-box;
+  width: 280px;
+  height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #D8E1E1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .carts .box_1 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
+}
+.carts .box_2 {
+  box-sizing: border-box;
+  width: 280px;
+  height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #D8E1E1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .carts .box_2 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
+}
+.carts .box_3 {
+  box-sizing: border-box;
+  width: 280px;
+  height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #D8E1E1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .carts .box_3 {
+    width: 207px;
+    height: 70px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 90%;
+  }
+}
+
+@keyframes slide_carts {
+  0% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 0;
+    margin-left: -50%;
+  }
+}

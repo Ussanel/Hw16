@@ -1,5 +1,8 @@
+@import '_mixin_all';
+
 .footer {
     .right {
+
         width: 33%;
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -8,7 +11,33 @@
         line-height: 135%;
         color: #FFFFFF;
 
+        @include _690 {
+            width: 40%;
+        }
+
+        @include _625 {
+            width: 40%;
+        }
+
+        @include _547 {
+            width: 100%;
+            font-size: 14px;
+        }
+
         .contacts {
+            @include _992 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+
+            @include _547 {
+                font-size: 21px;
+                line-height: 25px;
+                margin: 45px 0px 25px 0px;
+            }
+
             font-weight: 600;
             font-size: 34px;
             line-height: 40px;
@@ -17,6 +46,18 @@
         }
 
         .list {
+            @include _992 {
+                font-size: 16px;
+            }
+
+            @include _547 {
+                padding: 0;
+                height: 180px;
+                font-size: 17px;
+                line-height: 135%;
+                justify-content: space-between;
+            }
+
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -28,19 +69,34 @@
                 box-sizing: border-box;
                 width: 28px;
                 height: 28px;
-                margin-right: 10px
+                margin-right: 10px;
+                @include _547 {
+                    box-sizing: border-box;
+        width: 23px;
+        height: 23px;
+        margin-right: 13px
+                }
             }
+
             a {
                 text-decoration: none;
                 color: white
             }
 
-            // .mob {}
+            .list_mob {
+                display: none;
+
+                @include _547 {
+                    margin-bottom: 10px;
+                }
+
+            }
 
             .phone {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+
                 &::before {
                     content: url(/picture/footer_phone.png);
                     color: white;
@@ -49,18 +105,22 @@
                     height: 100%;
                     display: inline-block;
                 }
+
                 &:hover {
                     text-decoration: underline;
                 }
-                img{
+
+                img {
                     transform: translate(3%, 3%);
                 }
             }
 
-            .icon { width: 100%;
+            .icon {
+                width: 100%;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+
                 .whatsapp {
                     transform: translate(10%, 10%)
                 }
@@ -77,44 +137,75 @@
                     display: inline-block;
                     vertical-align: top;
                 }
+
                 &:hover {
                     text-decoration: underline;
                 }
-                img{
+
+                img {
                     transform: translate(3%, 3%);
                 }
             }
 
             .email {
                 &::before {
-                content: url(/picture/Email_icon.png);
-                color: white;
-                box-sizing: border-box;
-                width: auto;
-                height: 100%;
-                margin-right: 5px;
-                display: inline-block;
-                vertical-align: top;
-                transform: translate(-8%, 0%);
-            }
-            &:hover {
-                text-decoration: underline;
-            }
-            img{
-                transform: translate(3%, 3%);
-            }
-                
+                    content: url(/picture/Email_icon.png);
+                    color: white;
+                    box-sizing: border-box;
+                    width: auto;
+                    height: 100%;
+                    margin-right: 5px;
+                    display: inline-block;
+                    vertical-align: top;
+                    transform: translate(-8%, 0%);
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                img {
+                    transform: translate(3%, 3%);
+                }
+
             }
         }
 
-        .copyright { font-size: small;
-            right: 10px;
+        .copyright {
+            @include _992 {
+                right: 30px;
+                bottom: 8px;
+            }
+
+            @include _690 {
+                font-size: x-small;
+                right: 20px;
+            }
+
+            @include _625 {
+                right: 10px;
+                bottom: 0px;
+            }
+            @include _547 {
+                text-align: right;
+                margin: 36px 0px 0px 0;
+                position: static;
+                font-size: 11px;
+            }
+
+            font-size: small;
+            right: 30px;
             bottom: 2px;
             position: absolute;
+
             img {
                 margin-right: 5px;
                 height: 100%;
                 width: auto;
-            }}
+                @include _547 {
+                    margin-right: 5px; 
+                }
+            }
+        }
     }
 }

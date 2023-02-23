@@ -1,7 +1,5 @@
-
-
 @import '_header';
-@import 'header_mob';
+@import '_header_mob';
 @import 'contant';
 @import '_carts';
 @import '_table';
@@ -10,18 +8,19 @@
 @import '_picture';
 @import '_footer_left';
 @import '_footer_right';
+@import '_mixin_all';
+
 
 .header_mob,
 .text_mob,
 .btn_mob,
-.right_img_mob,
-.burger{
+.right_img_mob {
     position: absolute;
     top: -999999px;
-    left: -9999999px}
+    left: -9999999px
+}
 
-
-   * {
+* {
     margin: 0;
     padding: 0;
 }
@@ -31,4 +30,51 @@ html {
     background-image: url(/picture/Rectangle1.png);
     background-size: 100vw auto;
     background-repeat: no-repeat;
+
+    @include _992 {
+        background-color: none;
+    }
+    @include _547{
+        background-image: url(/picture/back-mob.png);
+        background-size: auto 100vh;
+        background-position: top;
+        background-color: white;
+        position: relative;
+    }
+    @include _482{
+        background-size: 100vw 100vh
+    }
+    @include _350{ position: relative;}
 }
+.body{
+    @include _547{
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@include _547{
+    .header,
+    .footer_list_icon,
+    .img_right,
+    .c_right_img,
+    .c_btn,
+    .c_text {
+        position: absolute;
+        top: -999999px;
+        left: -9999999px
+    }
+    .header_mob,
+    .c_text_mob,
+    .c_btn_mob,
+    .c_right_img {
+        position: inherit;
+    }
+}
+
+
+
+
+    // @import '_mixin_all'
+    //  @include _505{}

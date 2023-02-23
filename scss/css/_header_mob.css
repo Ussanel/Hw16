@@ -1,0 +1,67 @@
+@media screen and (max-width: 992px) {
+  .header_mob {
+    position: absolute;
+    top: -999999px;
+    left: -9999999px;
+  }
+}
+@media screen and (max-width: 547px) {
+  .header_mob .box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0 45px 0;
+  }
+}
+@media screen and (max-width: 547px) {
+  .header_mob .box .left {
+    font-family: "Sofia Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #46B1DE;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header_mob .box .left img {
+    width: 34px;
+    height: 34px;
+    margin-right: 3px;
+  }
+  .header_mob .box .left span {
+    font-size: 11.5;
+  }
+}
+@media screen and (max-width: 547px) {
+  .header_mob .box .right {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-start;
+    padding: 2px;
+  }
+  .header_mob .box .right img {
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+  }
+}
+.header_mob .box .right a {
+  text-decoration: none;
+  color: black;
+}
+.header_mob .box .right a::before {
+  content: url(/picture/-phone-in-talk_90490_1.png);
+  margin-right: 5px;
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+}

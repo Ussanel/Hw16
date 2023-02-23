@@ -4,11 +4,10 @@
   display: inline-block;
   vertical-align: middle;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant {
     margin: 0 10px;
     height: min-content;
-    color: green;
   }
 }
 .contant .left {
@@ -17,7 +16,7 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .left {
     margin: 0 10px;
     height: min-content;
@@ -34,16 +33,17 @@
   margin-bottom: 30px;
   animation: slid_text_left 0.5s linear 1 reverse 0s backwards;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1024px) {
   .contant .left .title_text {
     font-size: 30px;
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .left .title_text {
     font-size: 20px;
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 .contant .left .title_text span {
@@ -65,11 +65,23 @@
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .left .slide .text {
     font-size: 13px;
     margin-bottom: 15px;
     white-space: nowrap;
+  }
+}
+.contant .left .slide .text_mob {
+  position: absolute;
+  top: -999999px;
+  left: -9999999px;
+}
+@media screen and (max-width: 992px) {
+  .contant .left .slide .text_mob {
+    position: absolute;
+    top: -999999px;
+    left: -9999999px;
   }
 }
 .contant .btn {
@@ -84,7 +96,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .btn {
     font-size: 15px;
     align-items: flex-end;
@@ -99,7 +111,7 @@
   width: 110px;
   height: min-content;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .btn .btn_1 {
     width: 70px;
     padding: 8px 20px;
@@ -115,23 +127,34 @@
   box-shadow: 0px 2px 10px #DDE0DC;
   color: #46B1DE;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .contant .btn .btn_2 {
     width: 70px;
     padding: 8px 20px;
   }
 }
-
-.right {
+.contant .btn_mob {
+  position: absolute;
+  top: -999999px;
+  left: -9999999px;
+}
+@media screen and (max-width: 992px) {
+  .contant .btn_mob {
+    position: absolute;
+    top: -999999px;
+    left: -9999999px;
+  }
+}
+.contant .right {
   display: inline-block;
   vertical-align: top;
 }
-@media screen and (max-width: 1250px) {
-  .right {
+@media screen and (max-width: 992px) {
+  .contant .right {
     display: inline-block;
   }
 }
-.right .right_img {
+.contant .right .right_img {
   width: 572px;
   height: 530px;
   position: absolute;
@@ -139,25 +162,39 @@
   right: 110px;
   z-index: -99;
 }
-@media screen and (max-width: 1250px) {
-  .right .right_img {
-    right: 0px;
-    top: 62px;
+@media screen and (max-width: 992px) {
+  .contant .right .right_img {
+    position: absolute;
+    top: 69px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contant .right .right_img {
+    width: auto;
+    height: 47vh;
+    transform: translate(-5%, -4%);
   }
 }
 @media screen and (max-width: 1250px) {
-  .right .right_img {
+  .contant .right .right_img {
+    top: 62px;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contant .right .right_img {
     width: auto;
     height: 400px;
     top: 87px;
     right: 0px;
   }
 }
-@media screen and (max-width: 1250px) {
-  .right .right_img {
+@media screen and (max-width: 992px) {
+  .contant .right .right_img_mob {
     position: absolute;
-    top: 69px;
-    right: 10px;
+    top: -999999px;
+    left: -9999999px;
   }
 }
 
