@@ -1,14 +1,16 @@
 @import '_mixin_all';
 
 .header_mob {
-        position: absolute;
-        top: -999999px;
-        left: -9999999px;
+    position: absolute;
+    top: -999999px;
+    left: -9999999px;
+
     @include _547 {
         position: absolute;
         top: 0;
         left: 0;
     }
+
     .box {
         @include _547 {
             display: flex;
@@ -64,9 +66,10 @@
             a {
                 text-decoration: none;
                 color: black;
+
                 &::before {
                     content: url(/picture/-phone-in-talk_90490_1.png);
-                    margin-right: 5px;   
+                    margin-right: 5px;
                     display: none;
                     vertical-align: top;
                 }
@@ -92,27 +95,29 @@
 
         span {
             background-color: #000000;
-        &:nth-child(1) {
-            position: absolute;
-            top: 0;
-            height: 1px;
-            width: 100%;
-        }
 
-        &:nth-child(2) {
-            position: absolute;
-            top: 50%;
-            transform: translatey(-50%);
-            height: 1px;
-            width: 100%;
-        }
+            &:nth-child(1) {
+                position: absolute;
+                top: 0;
+                height: 1px;
+                width: 100%;
+            }
 
-        &:nth-child(3) {
-            position: absolute;
-            bottom: 0;
-            height: 1px;
-            width: 100%;
-        }}
+            &:nth-child(2) {
+                position: absolute;
+                top: 50%;
+                transform: translatey(-50%);
+                height: 1px;
+                width: 100%;
+            }
+
+            &:nth-child(3) {
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+            }
+        }
 
         &:hover {
             span {
@@ -144,17 +149,23 @@
             }
         }
     }
-    @include _625{
+
+    @include _625 {
         top: 28px;
     }
+
     @include _547 {
         top: 51px;
     }
-    @include _482{
+
+    @include _482 {
         top: 35px;
     }
-    @include _350{
-        top: 51px;
-        left: 90%;
+
+    @include _390 { top: 51px;
+        left: 90%;}
+        @include _350 {
+            top: 51px;
+            left: 90%;
+        }
     }
-}

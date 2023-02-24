@@ -8,8 +8,11 @@
     margin-right: auto;
 
     @include _547 {
-        margin-top: 15px;
+        margin-top: 10vh;
         background-color: white;
+    }
+    @include _350{
+        margin-top: 64vh;
     }
 
     

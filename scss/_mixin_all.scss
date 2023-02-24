@@ -54,11 +54,16 @@
         @content
     }
 };
+@mixin _390 {
+    @media screen and (max-width: 390px) {
+        @content
+    }};
 @mixin _350 {
     @media screen and (max-width: 350px) {
         @content
     }
 };
+
 
 
 

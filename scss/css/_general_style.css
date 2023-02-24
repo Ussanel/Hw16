@@ -294,6 +294,12 @@
     top: 35px;
   }
 }
+@media screen and (max-width: 390px) {
+  .burger {
+    top: 51px;
+    left: 90%;
+  }
+}
 @media screen and (max-width: 350px) {
   .burger {
     top: 51px;
@@ -878,8 +884,13 @@
 }
 @media screen and (max-width: 547px) {
   .table {
-    margin-top: 15px;
+    margin-top: 10vh;
     background-color: white;
+  }
+}
+@media screen and (max-width: 350px) {
+  .table {
+    margin-top: 64vh;
   }
 }
 .table .title {
@@ -1189,7 +1200,7 @@
 @media screen and (max-width: 547px) {
   .diagram .table_box {
     white-space: pre-line;
-    height: 345px;
+    height: 320px;
   }
 }
 @media screen and (max-width: 505px) {
@@ -1328,6 +1339,11 @@
     margin-right: 7px;
   }
 }
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap1 {
+    width: min-content;
+  }
+}
 .diagram .table_box .gap2 {
   grid-area: 3/1/5/4;
   text-align: right;
@@ -1364,6 +1380,11 @@
   .diagram .table_box .gap2 {
     height: 60px;
     margin-right: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap2 {
+    width: min-content;
   }
 }
 .diagram .table_box .gap3 {
@@ -1407,6 +1428,11 @@
 @media screen and (max-width: 440px) {
   .diagram .table_box .gap3 {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap3 {
+    width: min-content;
   }
 }
 .diagram .table_box .gap_back {
@@ -1499,7 +1525,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle1 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1522,7 +1548,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle2 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1545,7 +1571,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle3 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1568,7 +1594,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle4 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1591,7 +1617,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle5 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1614,7 +1640,7 @@
 }
 @media screen and (max-width: 547px) {
   .diagram .table_box .gap_back .an_back .circle6 {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1690,6 +1716,12 @@
     margin-left: 7px;
   }
 }
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap5 {
+    width: min-content;
+    margin-left: 30px;
+  }
+}
 .diagram .table_box .gap6 {
   grid-area: 3/10/5/13;
   margin-left: 40px;
@@ -1725,6 +1757,12 @@
   .diagram .table_box .gap6 {
     height: 60px;
     margin-left: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap6 {
+    width: min-content;
+    margin-left: 15px;
   }
 }
 .diagram .table_box .gap7 {
@@ -1766,6 +1804,11 @@
 @media screen and (max-width: 440px) {
   .diagram .table_box .gap7 {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .diagram .table_box .gap7 {
+    width: min-content;
   }
 }
 @media screen and (max-width: 992px) {
