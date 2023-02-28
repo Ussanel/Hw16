@@ -58,7 +58,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: #46B1DE;
+        @extend %light_blue;
         margin: 0 15px;
     }
 

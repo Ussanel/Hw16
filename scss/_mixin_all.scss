@@ -1,3 +1,4 @@
+
 @mixin _1250 {
     @media screen and (max-width: 1250px) {
         @content
@@ -6,8 +7,7 @@
 
 @mixin _1024 {
     @media screen and (max-width: 1024px) {
-        @content
-    }
+        @content}
 };
 @mixin _992 {
     @media screen and (max-width: 992px) {
@@ -63,7 +63,8 @@
         @content
     }
 };
-
+%light_blue{ color: #46B1DE;}
+   
 
 
 

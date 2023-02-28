@@ -39,7 +39,7 @@
 
         span {
             font-weight: 600;
-            color: #46B1DE;
+            @extend %light_blue;
         }
     }
 
@@ -130,7 +130,7 @@
             }
 
             span {
-                color: #46B1DE;
+                @extend %light_blue;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 600;
@@ -681,7 +681,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 140%;
-        color: #46B1DE;
+        @extend %light_blue;
         display: inline-block;
     }
 }
