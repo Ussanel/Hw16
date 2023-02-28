@@ -1,13 +1,11 @@
-@import '_mixin_all';
+@import '_template';
 
 .footer {
     .right {
 
         width: 33%;
+        @include title_style(20px, 400, normal);
         font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
         line-height: 135%;
         color: #FFFFFF;
 
@@ -26,8 +24,7 @@
 
         .contacts {
             @include _992 {
-                font-weight: 600;
-                font-size: 20px;
+                @include title_style(20px, 600, normal);
                 line-height: 40px;
                 margin-bottom: 10px;
             }
@@ -37,9 +34,7 @@
                 line-height: 25px;
                 margin: 45px 0px 25px 0px;
             }
-
-            font-weight: 600;
-            font-size: 34px;
+            @include title_style(34px, 600, normal);
             line-height: 40px;
             margin-left: 2px;
             margin-bottom: 20px;

@@ -1,4 +1,4 @@
-@import '_mixin_all';
+@import '_template';
 
 %circleall {
     font-size: 35px;
@@ -27,10 +27,8 @@
 
         width: min-content;
         white-space: nowrap;
+        @include title_style(34px, 400, normal);
         font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 34px;
         line-height: 40px;
         margin-top: 90px;
         margin-left: auto;
@@ -99,10 +97,8 @@
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
 
         div {
+            @include title_style(16px, 400, normal);
             font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
             line-height: 19px;
 
             @include _1250 {
@@ -131,10 +127,8 @@
 
             span {
                 @extend %light_blue;
+                @include title_style(20px, 600, normal);
                 font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
                 line-height: 135%;
 
                 @include _992 {
@@ -676,10 +670,8 @@
         }
 
         white-space: nowrap;
+        @include title_style(20px, 400, normal);
         font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
         line-height: 140%;
         @extend %light_blue;
         display: inline-block;

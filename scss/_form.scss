@@ -1,4 +1,4 @@
-@import '_mixin_all';
+@import '_template';
 
 .form {
     .bigbox {
@@ -58,10 +58,8 @@
                 }
 
                 @include _547 {
+                    @include title_style(20px, 500, normal);
                     font-family: 'Roboto', sans-serif;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 20px;
                     line-height: 100%;
                     text-align: center;
                     text-transform: uppercase;
@@ -69,11 +67,9 @@
                     margin: 10px auto 5px auto;
                 }
 
+                @include title_style(32px, 500, normal);
                 font-family: 'Roboto',
                 sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 32px;
                 line-height: 130%;
                 text-align: center;
                 text-transform: uppercase;
@@ -92,21 +88,16 @@
                 }
 
                 @include _547 {
+                    @include title_style(10px, 400, normal);
                     font-family: 'Roboto', sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 10px;
                     line-height: 100%;
                     text-align: center;
                     color: #1B1D1F;
                     margin-bottom: 20px;
                 }
-
+                @include title_style(16px, 400, normal);
                 font-family: 'Roboto',
                 sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
                 line-height: 140%;
                 text-align: center;
                 color: #1B1D1F;
@@ -144,10 +135,8 @@
                         margin-bottom: 2px;
                         background: rgba(217, 217, 217, 0.71);
                         border-radius: 8px;
+                        @include title_style(12px, 600, normal);
                         font-family: 'Roboto', sans-serif;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
                         line-height: 100%;
                         text-align: center;
                         color: rgba(27, 29, 31, 0.51);
@@ -162,11 +151,9 @@
                     height: 57px;
                     background: rgba(217, 217, 217, 0.71);
                     border-radius: 8px;
+                    @include title_style(19px, 600, normal);
                     font-family: 'Roboto',
                     sans-serif;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 19px;
                     line-height: 140%;
                     text-align: center;
                     color: rgba(27, 29, 31, 0.51);
@@ -227,10 +214,8 @@
                         height: 20px;
                         background: #46B1DE;
                         border-radius: 8px;
+                        @include title_style(12px, 600, normal);
                         font-family: 'Roboto', sans-serif;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
                         line-height: 100%;
                         text-align: center;
                         color: #FFFFFF;
@@ -242,11 +227,9 @@
                     height: 57px;
                     background: #46B1DE;
                     border-radius: 8px;
+                    @include title_style(19px, 600, normal);
                     font-family: 'Roboto',
                     sans-serif;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 19px;
                     line-height: 140%;
                     text-align: center;
                     color: #FFFFFF;

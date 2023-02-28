@@ -3,9 +3,6 @@
 }
 
 .header {
-  /* margin-top: 60px
-  margin-left: 7.85%;
-  margin: 60px 210px 0 110px; */
   margin: 60px 110px 34px 110px;
   display: flex;
   justify-content: space-between;
@@ -32,10 +29,10 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Sofia Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
+  font-family: "Sofia Sans", sans-serif;
   line-height: 110%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -79,10 +76,10 @@
   justify-content: space-around;
   align-items: flex-start;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
   line-height: 19px;
   color: #1B1D1F;
   height: 19px;
@@ -175,10 +172,10 @@
 }
 @media screen and (max-width: 547px) {
   .header_mob .box .left {
-    font-family: "Sofia Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    font-family: "Sofia Sans";
     color: #46B1DE;
     display: flex;
     justify-content: flex-start;
@@ -195,10 +192,10 @@
 }
 @media screen and (max-width: 547px) {
   .header_mob .box .right {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
+    font-family: "Roboto";
     line-height: 14px;
     text-align: center;
     display: flex;
@@ -359,6 +356,7 @@
   }
 }
 .contant .left .title_text {
+  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
@@ -398,10 +396,10 @@
 }
 @media screen and (max-width: 547px) {
   .contant .left .title_text {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
+    font-family: "Roboto";
     line-height: 130%;
     text-align: center;
     letter-spacing: 0.1em;
@@ -413,6 +411,7 @@
   animation: slide 0.5s linear 1 reverse 0.2s backwards;
 }
 .contant .left .slide .text {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -464,10 +463,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
+  font-family: "Roboto", sans-serif;
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
@@ -672,9 +671,10 @@
 .carts {
   width: 90vw;
   margin: 60px auto 0 auto;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
@@ -907,6 +907,7 @@
   }
 }
 .table .title {
+  font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 130%;
@@ -928,6 +929,7 @@
   }
 }
 .table .subtitle {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -1015,10 +1017,11 @@
   }
 }
 .table .box .gap {
-  width: 300px;
-  height: 176px;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  width: 300px;
+  height: 176px;
   line-height: 19px;
   color: #1B1D1F;
   background: #FFFFFF;
@@ -1059,6 +1062,7 @@
   }
 }
 .table .box .gap .gaptitle {
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -1098,6 +1102,7 @@
   }
 }
 .table .box .gap .gaptitle span {
+  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 47px;
@@ -1145,10 +1150,10 @@
 .diagram h1 {
   width: min-content;
   white-space: nowrap;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
+  font-family: "Roboto";
   line-height: 40px;
   margin-top: 90px;
   margin-left: auto;
@@ -1235,10 +1240,10 @@
   }
 }
 .diagram .table_box div {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  font-family: "Roboto";
   line-height: 19px;
 }
 @media screen and (max-width: 1250px) {
@@ -1271,10 +1276,10 @@
   }
 }
 .diagram .table_box div span {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  font-family: "Roboto";
   line-height: 135%;
 }
 @media screen and (max-width: 992px) {
@@ -1884,10 +1889,10 @@
 }
 .text p {
   white-space: nowrap;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  font-family: "Roboto";
   line-height: 140%;
   display: inline-block;
 }
@@ -2276,10 +2281,10 @@
   }
 }
 .form .bigbox .box h1 {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
+  font-family: "Roboto", sans-serif;
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
@@ -2294,10 +2299,10 @@
 }
 @media screen and (max-width: 547px) {
   .form .bigbox .box h1 {
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -2306,10 +2311,10 @@
   }
 }
 .form .bigbox .box h4 {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
   line-height: 140%;
   text-align: center;
   color: #1B1D1F;
@@ -2328,10 +2333,10 @@
 }
 @media screen and (max-width: 547px) {
   .form .bigbox .box h4 {
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     text-align: center;
     color: #1B1D1F;
@@ -2365,10 +2370,10 @@
   height: 57px;
   background: rgba(217, 217, 217, 0.71);
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
+  font-family: "Roboto", sans-serif;
   line-height: 140%;
   text-align: center;
   color: rgba(27, 29, 31, 0.51);
@@ -2390,10 +2395,10 @@
     margin-bottom: 2px;
     background: rgba(217, 217, 217, 0.71);
     border-radius: 8px;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     text-align: center;
     color: rgba(27, 29, 31, 0.51);
@@ -2454,10 +2459,10 @@
   height: 57px;
   background: #46B1DE;
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
+  font-family: "Roboto", sans-serif;
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
@@ -2473,10 +2478,10 @@
     height: 20px;
     background: #46B1DE;
     border-radius: 8px;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     text-align: center;
     color: #FFFFFF;
@@ -2583,12 +2588,12 @@
 }
 .footer .left {
   width: 33%;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
   line-height: 135%;
   color: #0F2D4A;
-  font-size: 20px;
 }
 @media screen and (max-width: 1024px) {
   .footer .left {
@@ -2614,11 +2619,11 @@
 }
 .footer .left .boxicon {
   color: #0F2D4A;
-  font-family: "Sofia Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%;
   font-size: 26px;
+  font-family: "Sofia Sans", sans-serif;
+  line-height: 140%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2747,10 +2752,10 @@
 
 .footer .right {
   width: 33%;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
   line-height: 135%;
   color: #FFFFFF;
 }
@@ -2771,6 +2776,7 @@
   }
 }
 .footer .right .contacts {
+  font-style: normal;
   font-weight: 600;
   font-size: 34px;
   line-height: 40px;
@@ -2779,6 +2785,7 @@
 }
 @media screen and (max-width: 992px) {
   .footer .right .contacts {
+    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 40px;

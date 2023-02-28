@@ -1,8 +1,8 @@
-@import '_mixin_all';
+@import '_template';
 
 .table {
     font-family: 'Roboto',
-    sans-serif;
+        sans-serif;
     font-style: normal;
     margin-left: auto;
     margin-right: auto;
@@ -11,11 +11,12 @@
         margin-top: 3vh;
         background-color: white;
     }
-    @include _350{
+
+    @include _350 {
         margin-top: 64vh;
     }
 
-    
+
     .title {
         @include _992 {
             font-size: 20px;
@@ -28,8 +29,7 @@
             margin: 0 auto 5px auto
         }
 
-        font-weight: 400;
-        font-size: 34px;
+        @include title_style(34px, 400, normal);
         line-height: 130%;
         color: #1B1D1F;
         text-align: center;
@@ -56,6 +56,7 @@
             line-height: 100%;
             margin-bottom: 5px;
         }
+
         @include _350 {
             margin: 0 auto;
             width: 80vw;
@@ -63,8 +64,7 @@
             text-align: center;
         }
 
-        font-weight: 400;
-        font-size: 16px;
+        @include title_style(16px, 400, normal);
         line-height: 140%;
         text-align: center;
         color: #000000;
@@ -144,15 +144,15 @@
                 width: 200px;
                 height: 80px;
             }
-            @include _482{
+
+            @include _482 {
                 font-size: 10px;
                 line-height: 13px;
             }
 
+            @include title_style(16px, 400, normal);
             width: 300px;
             height: 176px;
-            font-weight: 400;
-            font-size: 16px;
             line-height: 19px;
             color: #1B1D1F;
             background: #FFFFFF;
@@ -171,7 +171,8 @@
                 @include _800 {
                     white-space: nowrap;
                 }
-                @include _690{
+
+                @include _690 {
                     font-size: 13px;
                 }
 
@@ -179,11 +180,13 @@
                     line-height: 11px;
                     margin-bottom: 5px;
                 }
-                @include _482{font-size: 11px;
-                    line-height: 11px;}
 
-                font-weight: 700;
-                font-size: 18px;
+                @include _482 {
+                    font-size: 11px;
+                    line-height: 11px;
+                }
+
+                @include title_style(18px, 700, normal);
                 line-height: 21px;
                 @extend %light_blue;
                 display: flex;
@@ -200,7 +203,8 @@
                         font-size: 30px;
                         margin: 0 0px;
                     }
-                    @include _690{
+
+                    @include _690 {
                         font-size: 25px;
                         margin-right: 5px
                     }
@@ -211,9 +215,7 @@
                         margin: 5px;
                     }
 
-
-                    font-weight: 400;
-                    font-size: 40px;
+                    @include title_style(40px, 400, normal);
                     line-height: 47px;
                     margin: 0 10px;
                 }

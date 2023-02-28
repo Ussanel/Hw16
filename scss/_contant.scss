@@ -1,4 +1,4 @@
-@import '_mixin_all';
+@import '_template';
 
 .contant {
     margin: 0 110px 0 110px;
@@ -41,8 +41,7 @@
         }
 
         .title_text {
-            font-weight: 700;
-            font-size: 40px;
+            @include title_style(40px, 700, normal);
             line-height: 130%;
             letter-spacing: 0.1em;
             color: #1B1D1F;
@@ -74,10 +73,8 @@
             }
 
             @include _547 {
+                @include title_style(22px, 700, normal);
                 font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 22px;
                 line-height: 130%;
                 text-align: center;
                 letter-spacing: 0.1em;
@@ -94,8 +91,7 @@
             animation: slide 0.5s linear 1 reverse 0.2s backwards;
 
             .text {
-                font-weight: 400;
-                font-size: 16px;
+                @include title_style(16px, 400, normal);
                 line-height: 140%;
                 color: #1B1D1F;
                 margin-bottom: 48px;
@@ -154,11 +150,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include title_style(19px, 600, normal);
         font-family: 'Roboto',
         sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 19px;
+
         line-height: 140%;
         text-align: center;
         text-transform: uppercase;

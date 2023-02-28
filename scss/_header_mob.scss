@@ -1,4 +1,4 @@
-@import '_mixin_all';
+@import '_template';
 
 .header_mob {
     position: absolute;
@@ -21,10 +21,8 @@
 
         .left {
             @include _547 {
+                @include title_style(16px, 400, normal);
                 font-family: 'Sofia Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
                 color: #46B1DE;
                 display: flex;
                 justify-content: flex-start;
@@ -44,10 +42,8 @@
 
         .right {
             @include _547 {
+                @include title_style(12px, 400, normal);
                 font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
                 line-height: 14px;
                 text-align: center;
                 display: flex;
