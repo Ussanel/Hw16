@@ -1,0 +1,38 @@
+@import '_template'; 
+$mainColor: #46B1DE;
+
+@mixin triengle($wight, $color) {
+    width: $wight;
+    background-color: $color;
+
+}
+
+.triengle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid $mainColor;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999999999;
+    animation: slide_triengle 1s linear 2 0s forwards ;
+    @include _768{
+        border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid $mainColor;
+    right: 15px;
+    }
+    @include _547{
+        display: none;
+    }
+    }
+    @keyframes  slide_triengle{
+        0%{opacity:0;
+            bottom: 70px;}
+        100%{opacity:1;
+            bottom: 10px;
+        }
+    
+    }

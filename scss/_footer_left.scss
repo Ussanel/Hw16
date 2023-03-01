@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+    z-index: 99999999999;
 
     .left {
         @include _1024 {
