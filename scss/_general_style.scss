@@ -29,7 +29,7 @@
 
 html {
     width: 100%;
-    background-image: url(/picture/Rectangle1.png);
+    background-image: url(/scss/picture/Rectangle1.png);
     background-size: 100vw auto;
     background-repeat: no-repeat;
 
@@ -37,7 +37,7 @@ html {
         background-color: none;
     }
     @include _547{
-        background-image: url(/picture/back-mob.png);
+        background-image: url(/scss/picture/back-mob.png);
         background-size: auto 100vh;
         background-position: top;
         background-color: white;

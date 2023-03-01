@@ -3012,7 +3012,7 @@
 
 html {
   width: 100%;
-  background-image: url(/picture/Rectangle1.png);
+  background-image: url(/scss/picture/Rectangle1.png);
   background-size: 100vw auto;
   background-repeat: no-repeat;
 }
@@ -3023,7 +3023,7 @@ html {
 }
 @media screen and (max-width: 547px) {
   html {
-    background-image: url(/picture/back-mob.png);
+    background-image: url(/scss/picture/back-mob.png);
     background-size: auto 100vh;
     background-position: top;
     background-color: white;
