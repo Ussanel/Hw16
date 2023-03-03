@@ -78,14 +78,14 @@
                 color: black;
 
                 &::before {
-                    content: url(/picture/-phone-in-talk_90490_1.png);
+                    content: url(./scss/picture/-phone-in-talk_90490_1.png);
                     margin-right: 5px;
                     height: 25px;
                     width: 25px;
                     display: inline-block;
                     vertical-align: top;
                     @include _1024{
-                        content: url(-phone-in-talk_90490_1.png);
+                        content: url(./scss/picture/-phone-in-talk_90490_1.png);
                         margin-right: 0px;
                         transform: scale(0.8);
                     }

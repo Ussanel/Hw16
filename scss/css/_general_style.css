@@ -120,7 +120,7 @@
   color: black;
 }
 .header .box_right .phone a::before {
-  content: url(/picture/-phone-in-talk_90490_1.png);
+  content: url(./scss/picture/-phone-in-talk_90490_1.png);
   margin-right: 5px;
   height: 25px;
   width: 25px;
@@ -129,7 +129,7 @@
 }
 @media screen and (max-width: 1024px) {
   .header .box_right .phone a::before {
-    content: url(-phone-in-talk_90490_1.png);
+    content: url(./scss/picture/-phone-in-talk_90490_1.png);
     margin-right: 0px;
     transform: scale(0.8);
   }
@@ -215,7 +215,7 @@
   color: black;
 }
 .header_mob .box .right a::before {
-  content: url(/picture/-phone-in-talk_90490_1.png);
+  content: url(./scss/picture/-phone-in-talk_90490_1.png);
   margin-right: 5px;
   display: none;
   vertical-align: top;
@@ -2854,7 +2854,7 @@
   align-items: center;
 }
 .footer .right .list .phone::before {
-  content: url(/picture/footer_phone.png);
+  content: url(./scss/picture/footer_phone.png);
   color: white;
   box-sizing: border-box;
   width: auto;
@@ -2877,7 +2877,7 @@
   transform: translate(10%, 10%);
 }
 .footer .right .list .insta::before {
-  content: url(/picture/instagram_icon.png);
+  content: url(./scss/picture/instagram_icon.png);
   color: white;
   box-sizing: border-box;
   width: auto;
@@ -2893,7 +2893,7 @@
   transform: translate(3%, 3%);
 }
 .footer .right .list .email::before {
-  content: url(/picture/Email_icon.png);
+  content: url(./scss/picture/Email_icon.png);
   color: white;
   box-sizing: border-box;
   width: auto;
@@ -3012,7 +3012,7 @@
 
 html {
   width: 100%;
-  background-image: url(./picture/Rectangle1.png);
+  background-image: url(./scss/picture/Rectangle1.png);
   background-size: 100vw auto;
   background-repeat: no-repeat;
 }
@@ -3023,7 +3023,7 @@ html {
 }
 @media screen and (max-width: 547px) {
   html {
-    background-image: url(./picture/back-mob.png);
+    background-image: url(./scss/picture/back-mob.png);
     background-size: auto 100vh;
     background-position: top;
     background-color: white;

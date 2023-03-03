@@ -93,7 +93,7 @@
                 align-items: center;
 
                 &::before {
-                    content: url(/picture/footer_phone.png);
+                    content: url(./scss/picture/footer_phone.png);
                     color: white;
                     box-sizing: border-box;
                     width: auto;
@@ -123,7 +123,7 @@
 
             .insta {
                 &::before {
-                    content: url(/picture/instagram_icon.png);
+                    content: url(./scss/picture/instagram_icon.png);
                     color: white;
                     box-sizing: border-box;
                     width: auto;
@@ -144,7 +144,7 @@
 
             .email {
                 &::before {
-                    content: url(/picture/Email_icon.png);
+                    content: url(./scss/picture/Email_icon.png);
                     color: white;
                     box-sizing: border-box;
                     width: auto;
